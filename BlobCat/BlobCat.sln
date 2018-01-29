@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlobCat", "BlobCat\BlobCat.csproj", "{5DD9D378-38B5-4017-9C68-E95008981659}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5DD9D378-38B5-4017-9C68-E95008981659}.Debug|x86.ActiveCfg = Debug|x86
+		{5DD9D378-38B5-4017-9C68-E95008981659}.Debug|x86.Build.0 = Debug|x86
+		{5DD9D378-38B5-4017-9C68-E95008981659}.Release|x86.ActiveCfg = Release|x86
+		{5DD9D378-38B5-4017-9C68-E95008981659}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6488DCF7-6334-43C9-B3AB-46644ABCB61D}
+	EndGlobalSection
+EndGlobal
