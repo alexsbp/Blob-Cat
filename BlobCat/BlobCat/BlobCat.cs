@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace BlobCat
 {
-    class BlobCat
+    class BlobCat : GameObject
     {
+
     }
 }
