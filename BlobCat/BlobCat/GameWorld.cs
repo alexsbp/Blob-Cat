@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using System.Collections.Generic;
 
 namespace BlobCat
 {
@@ -11,6 +12,8 @@ namespace BlobCat
 	{
 		GraphicsDeviceManager graphics;
 		SpriteBatch spriteBatch;
+
+        List<GameObject> objects = new List<GameObject>();
 
 		public GameWorld()
 		{
@@ -41,6 +44,7 @@ namespace BlobCat
 			// Create a new SpriteBatch, which can be used to draw textures.
 			spriteBatch = new SpriteBatch(GraphicsDevice);
 
+            
 			// TODO: use this.Content to load your game content here
 		}
 
