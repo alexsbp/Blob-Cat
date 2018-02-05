@@ -30,11 +30,14 @@ namespace BlobCat
 		/// </summary>
 		protected override void Initialize()
 		{
-			// TODO: Add your initialization logic here
+            // TODO: Add your initialization logic here
+            objects.Add(new BlobCat(Content.Load<Texture2D>("Blob Cat"), new Vector2(500, 500), 0f, 1.5f));
+
+            this.IsMouseVisible = true; 
 
 			base.Initialize();
 		}
-
+        
 		/// <summary>
 		/// LoadContent will be called once per game and is the place to load
 		/// all of your content.
@@ -44,8 +47,8 @@ namespace BlobCat
 			// Create a new SpriteBatch, which can be used to draw textures.
 			spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            
 			// TODO: use this.Content to load your game content here
+          
 		}
 
 		/// <summary>
@@ -67,7 +70,12 @@ namespace BlobCat
 			if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
 				Exit();
 
-			// TODO: Add your update logic here
+            // TODO: Add your update logic here
+
+            foreach (GameObject o in objects)
+            {
+                o.Update();
+            }
 
 			base.Update(gameTime);
 		}
@@ -80,7 +88,17 @@ namespace BlobCat
 		{
 			GraphicsDevice.Clear(Color.CornflowerBlue);
 
-			// TODO: Add your drawing code here
+            // TODO: Add your drawing code here
+
+            spriteBatch.Begin();
+
+            foreach( GameObject o in objects)
+            {
+                o.Draw(spriteBatch);
+            }
+
+            spriteBatch.End();
+
 
 			base.Draw(gameTime);
 		}
