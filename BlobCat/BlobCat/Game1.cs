@@ -16,7 +16,7 @@ namespace BlobCat
 		{
 			graphics = new GraphicsDeviceManager(this);
 			Content.RootDirectory = "Content";
-			//YAAAAAAAAAAAAAAAAAAAAAAAAS 
+
 		}
 
 		/// <summary>
