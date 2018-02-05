@@ -19,7 +19,8 @@ namespace BlobCat
 		{
 			graphics = new GraphicsDeviceManager(this);
 			Content.RootDirectory = "Content";
-
+			graphics.PreferredBackBufferWidth = 1400;
+			graphics.PreferredBackBufferHeight = 800;
 		}
 
 		/// <summary>
@@ -31,6 +32,8 @@ namespace BlobCat
 		protected override void Initialize()
 		{
 			// TODO: Add your initialization logic here
+
+			//instantier musik 
 
 			base.Initialize();
 		}
@@ -66,6 +69,26 @@ namespace BlobCat
 		{
 			if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
 				Exit();
+
+			#region Skyd kode
+			KeyboardState keyState = Keyboard.GetState();
+
+			/*if (keyState.IsKeyDown(Keys.Space) && isShooting == false)
+			{
+				foreach (Player PL in Players)
+				{
+					Bullets.Add(new Shoot("laser_logo", new Vector2(PL.Position.X + 100, PL.Position.Y + 55)));
+					soundeffects.Add(Content.Load<SoundEffect>("Laser"));
+					soundeffects[0].Play();
+				}
+
+				isShooting = true;
+			}
+			if (keyState.IsKeyUp(Keys.Space))
+			{
+				isShooting = false;
+			}*/
+#endregion
 
 			// TODO: Add your update logic here
 
