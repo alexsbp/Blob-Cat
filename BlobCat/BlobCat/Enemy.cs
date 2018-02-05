@@ -8,6 +8,7 @@ namespace BlobCat
 {
     abstract class Enemy : GameObject
     {
+        int health; 
 
     }
 }
