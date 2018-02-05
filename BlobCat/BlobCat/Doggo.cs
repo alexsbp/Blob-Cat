@@ -8,11 +8,11 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace BlobCat
 {
-	class Doggo : GameObject
-	{
-		public Doggo(Texture2D sprites, Vector2 pos, float layers) : base(sprites, pos, layers)
-		{
+	class Doggo : Enemy
+    {
+        public Doggo(Texture2D sprites, Vector2 pos, float layers, float scale) : base(sprites, pos, layers, scale)
+        {
 
-		}
-	}
+        }
+    }
 }

@@ -11,11 +11,11 @@ namespace BlobCat
     abstract class Enemy : GameObject
     {
         int health;
-        public Enemy(Texture2D sprites, Vector2 pos, float layers) : base(sprites, pos, layers)
+        private float scale;
+
+        public Enemy(Texture2D sprites, Vector2 pos, float layers, float scale) : base(sprites, pos, layers, scale)
         {
-
+            this.scale = scale;
         }
-
-
     }
 }

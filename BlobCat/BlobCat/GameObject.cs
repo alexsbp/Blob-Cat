@@ -13,13 +13,15 @@ namespace BlobCat
     {
 		Texture2D sprite;
 		Vector2 position;
-		float layer; 
+		float layer;
+        private float scale;  
 
-		public GameObject(Texture2D sprites, Vector2 pos, float layers)
+		public GameObject(Texture2D sprites, Vector2 pos, float layers, float scale)
 		{
 			this.sprite = sprites;
 			this.position = pos;
-			this.layer = layers; 
+			this.layer = layers;
+            this.scale = scale;
 		}
 
 		public void LoadContent (ContentManager content, string spriteName)
@@ -34,7 +36,8 @@ namespace BlobCat
 
 		public virtual void Draw (SpriteBatch spriteBatch)
 		{
-			spriteBatch.Draw(this.sprite, this.position, Color.White); 
+            spriteBatch.Draw(sprite, position, null, Color.White, 0f, position, scale, SpriteEffects.None, layer);
+
 		}
 
     }
