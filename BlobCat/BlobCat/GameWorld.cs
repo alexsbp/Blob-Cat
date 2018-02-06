@@ -32,7 +32,7 @@ namespace BlobCat
 		protected override void Initialize()
 		{
             // TODO: Add your initialization logic here
-            objects.Add(new BlobCat(Content.Load<Texture2D>("Blob Cat"), new Vector2(500, 500), 0f, 1.5f));
+            objects.Add(new BlobCat(Content.Load<Texture2D>("Blob Cat"), new Vector2(300, 0), 0f, 1f));
 
             this.IsMouseVisible = true; 
 
