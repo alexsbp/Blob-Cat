@@ -38,8 +38,8 @@ namespace BlobCat
 		protected override void Initialize()
 		{
 			ISoundEngine engine = new ISoundEngine(); 
-            // TODO: Add your initialization logic here
-            objects.Add(new BlobCat(Content.Load<Texture2D>("Blob Cat"), new Vector2(10, 10), 0f, 0.5f));
+            // TODO: Add your initialization logic here 
+            objects.Add(new BlobCat(Content.Load<Texture2D>("Blob Cat"), new Vector2(100, 500), 0f, 0.5f));
 
             this.IsMouseVisible = true; 
 
