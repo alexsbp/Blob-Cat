@@ -39,7 +39,7 @@ namespace BlobCat
 		{
 			ISoundEngine engine = new ISoundEngine(); 
             // TODO: Add your initialization logic here 
-            objects.Add(new BlobCat(Content.Load<Texture2D>("Blob Cat"), new Vector2(100, 500), 0f, 0.5f));
+            objects.Add(new BlobCat(Content.Load<Texture2D>("Blobcat"), new Vector2(100, 500), 0f, 1.0f));
 
             this.IsMouseVisible = true; 
 
