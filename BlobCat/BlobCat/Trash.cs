@@ -8,5 +8,6 @@ namespace BlobCat
 {
     class Trash
     {
+
     }
 }

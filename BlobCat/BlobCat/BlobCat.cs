@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
 
 namespace BlobCat
 {
@@ -15,5 +16,20 @@ namespace BlobCat
         {
 
         }
+
+		public override void Update()
+		{
+			KeyboardState keyState = Keyboard.GetState();
+
+			if (keyState.IsKeyDown(Keys.Space))
+			{
+				Jump(); 
+			}
+		}
+
+		public void Jump()
+		{
+
+		}
     }
 }

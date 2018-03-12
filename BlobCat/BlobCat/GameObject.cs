@@ -9,10 +9,16 @@ using System.Threading.Tasks;
 
 namespace BlobCat
 {
-    class GameObject
-    {
+	public class GameObject
+	{
 		Texture2D sprite;
-		Vector2 position;
+		public Vector2 position;
+		public Vector2 Position
+		{
+			get { return position; }
+			set { position = value; }
+		}
+
 		float layer;
         private float scale;  
 
@@ -29,7 +35,7 @@ namespace BlobCat
 			sprite = content.Load<Texture2D>(spriteName); 
 		}
 
-		public void Update()
+		public virtual void Update()
 		{
 
 		}

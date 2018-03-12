@@ -10,7 +10,7 @@ namespace BlobCat
 {
 	class Birb : GameObject
 	{
-		public Birb(Texture2D sprites, Vector2 pos, float layers) : base(sprites, pos, layers)
+		public Birb(Texture2D sprites, Vector2 pos, float layers, float scale) : base(sprites, pos, layers, scale)
 		{
 
 		}
