@@ -42,7 +42,7 @@ namespace BlobCat
 
 		public virtual void Draw (SpriteBatch spriteBatch)
 		{
-            spriteBatch.Draw(sprite, position, null, Color.White, 0f, position, scale, SpriteEffects.None, layer);
+            spriteBatch.Draw(sprite, position, null, Color.White, 0f, Vector2.Zero, scale, SpriteEffects.None, layer);
 
 		}
 
