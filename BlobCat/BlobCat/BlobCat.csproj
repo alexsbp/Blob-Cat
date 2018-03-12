@@ -55,7 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="irrKlang.NET4">
-      <HintPath>..\..\..\Dania\irrKlang-1.6.0\bin\dotnet-4\irrKlang.NET4.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\overførsler\irrKlang-1.6.0\bin\dotnet-4\irrKlang.NET4.dll</HintPath>
     </Reference>
     <Reference Include="MonoGame.Framework">
       <HintPath>$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\Windows\MonoGame.Framework.dll</HintPath>
