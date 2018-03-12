@@ -96,7 +96,7 @@ namespace BlobCat
 			{ 
 				foreach (BlobCat BC in objects)
 				{
-					Bullets.Add(new Bullet(Content.Load<Texture2D>("rainbowStar"), new Vector2(BC.Position.X + 100, BC.Position.Y + 170), 0.1f, 0.3f));
+					Bullets.Add(new Bullet(Content.Load<Texture2D>("rainbowStar"), new Vector2(BC.Position.X + 80, BC.Position.Y + 125), 0.1f, 0.3f));
 					soundeffects.Add(Content.Load<SoundEffect>("owen_wilson_wow"));
 					soundeffects[0].Play();
 				}
