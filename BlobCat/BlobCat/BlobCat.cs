@@ -27,7 +27,12 @@ namespace BlobCat
 			}
 		}
 
-		public void Jump()
+        public override void Draw(SpriteBatch spriteBatch)
+        {
+            spriteBatch.Draw(base.Sprite, base.Position, null, Color.White, 0f, Vector2.Zero, Scale, SpriteEffects.FlipHorizontally, base.Layer);
+        }
+
+        public void Jump()
 		{
 
 		}

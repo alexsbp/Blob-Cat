@@ -19,20 +19,24 @@ namespace BlobCat
 			set { position = value; }
 		}
 
-		float layer;
+        public Texture2D Sprite { get => sprite; set => sprite = value; }
+        public float Layer { get => layer; set => layer = value; }
+        public float Scale { get => scale; set => scale = value; }
+
+        float layer;
         private float scale;  
 
 		public GameObject(Texture2D sprites, Vector2 pos, float layers, float scale)
 		{
-			this.sprite = sprites;
+			this.Sprite = sprites;
 			this.position = pos;
-			this.layer = layers;
-            this.scale = scale;
+			this.Layer = layers;
+            this.Scale = scale;
 		}
 
 		public void LoadContent (ContentManager content, string spriteName)
 		{
-			sprite = content.Load<Texture2D>(spriteName); 
+			Sprite = content.Load<Texture2D>(spriteName); 
 		}
 
 		public virtual void Update()
@@ -42,7 +46,7 @@ namespace BlobCat
 
 		public virtual void Draw (SpriteBatch spriteBatch)
 		{
-            spriteBatch.Draw(sprite, position, null, Color.White, 0f, Vector2.Zero, scale, SpriteEffects.None, layer);
+            spriteBatch.Draw(Sprite, position, null, Color.White, 0f, Vector2.Zero, Scale, SpriteEffects.None, Layer);
 
 		}
 
